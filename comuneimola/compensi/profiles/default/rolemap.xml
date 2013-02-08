@@ -13,5 +13,8 @@
       <role name="Manager" />
       <role name="Contributor" />
     </permission>
+    <permission name="comuneimola.compensi: Add ATAreaAnticorruzione" acquire="False">
+      <role name="Manager" />
+    </permission>
   </permissions>
 </rolemap>

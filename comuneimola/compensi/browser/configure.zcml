@@ -63,4 +63,15 @@
      name="comuneimola.compensi.images"
      directory="images"
      />
+
+  <browser:page
+      for="..interfaces.atareaanticorruzione.IATAreaAnticorruzione"
+      name="areaanticorruzione_view"
+      class=".vistaareaanticorruzioneview.vistaareaanticorruzioneView"
+      template="vistaareaanticorruzioneview.pt"
+      allowed_interface=".vistaareaanticorruzioneview.IVistaareaanticorruzioneView"
+      permission="zope.Public"
+      />
+
 </configure>
+

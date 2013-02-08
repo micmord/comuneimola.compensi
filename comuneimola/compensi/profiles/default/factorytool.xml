@@ -12,5 +12,6 @@
     <type portal_type="ATAreaCompensi" />
     <type portal_type="ATCompenso" />
     <type portal_type="ATLinkCompenso"/>
+    <type portal_type="ATAreaAnticorruzione" />
   </factorytypes>
 </object>

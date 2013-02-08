@@ -22,4 +22,11 @@
         />
   </class>
 
+  <class class=".atareaanticorruzione.ATAreaAnticorruzione">
+    <require
+        permission="zope2.View"
+        interface="..interfaces.atareaanticorruzione.IATAreaAnticorruzione"
+        />
+  </class>
+
 </configure>

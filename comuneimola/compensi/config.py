@@ -8,4 +8,5 @@ ADD_PERMISSIONS = {
     'ATAreaCompensi': 'comuneimola.compensi: Add ATAreaCompensi',
     'ATCompenso': 'comuneimola.compensi: Add ATCompenso',
     'ATLinkCompenso': 'comuneimola.compensi: Add ATLinkCompenso',
+    'ATAreaAnticorruzione': 'comuneimola.compensi: Add ATAreaAnticorruzione',
 }
