@@ -22,6 +22,15 @@ ATAreaAnticorruzioneSchema = folder.ATFolderSchema.copy() + atapi.Schema((
             ),
         required=False,
     ),
+    atapi.LinesField(name='publication_type_list',
+        widget=atapi.LinesWidget(
+            label=_(u"type_of_publication_list",
+                    default=u"Type of publication list"),
+            description=_(u"type_of_publication_list_description",
+                          default=u"List here the type of publication you need"),
+            ),
+        required=False,
+    ),
 ))
 
 ATAreaAnticorruzioneSchema['title'].storage = atapi.AnnotationStorage()

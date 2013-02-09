@@ -13,12 +13,13 @@ from comuneimola.compensi.config import PROJECTNAME
 from comuneimola.compensi import compensiMessageFactory as _
 
 ATProcedimento190Schema = folder.ATFolderSchema.copy() + atapi.Schema((
-    atapi.StringField('fiscal_data',
+
+    atapi.StringField('procedure_code',
         required=True,
         searchable=True,
         widget=atapi.StringWidget(
-            label=_(u'fiscal_data_label', default=u'Tax code or VAT number'),
-            description=_(u'fiscal_data_help', default=u"Insert the tax code or the VAT number"),
+            label=_(u'procedure_code_label', default=u'The code of the procedure'),
+            description=_(u'procedure_code_help', default=u"Insert the code of this procedure"),
             size=60,
             ),
     ),
@@ -41,12 +42,12 @@ ATProcedimento190Schema = folder.ATFolderSchema.copy() + atapi.Schema((
             ),
     ),
 
-    atapi.StringField('award_procedures',
+    atapi.StringField('publication_type',
         required=True,
-        vocabulary='awardProceduresVocab',
+        vocabulary='publication_typeVocab',
         widget=atapi.SelectionWidget(
-            label=_(u'award_procedures_label', default=u'Procedures for the award'),
-            description=_(u'award_procedures_help', default=u"Select the award procedures"),
+            label=_(u'publication_type_label', default=u'Type of publication'),
+            description=_(u'publication_type_help', default=u"Select the publication type"),
             ),
     ),
 
@@ -62,7 +63,7 @@ ATProcedimento190Schema = folder.ATFolderSchema.copy() + atapi.Schema((
 
 ))
 
-ATProcedimento190Schema['title'].widget.label = _(u'title_label', default=u'Name of the enterprise')
+ATProcedimento190Schema['title'].widget.label = _(u'title_label', default=u'Name of the Person/Subject/Object')
 ATProcedimento190Schema['description'].widget.visible = False
 ATProcedimento190Schema['effectiveDate'].widget.description = _(u'effectiveDate_help', default=u'If you set this date the item will be visible starting from this date. If you do not insert the date the item will be published immediately with the action of publication.')
 ATProcedimento190Schema['effectiveDate'].widget.visible = {'edit': 'invisible', 'view': 'visible'}
@@ -99,28 +100,13 @@ class ATProcedimento190(folder.ATFolder):
             offices.add(office, office)
         return offices
 
-    def awardProceduresVocab(self):
+    def publication_typeVocab(self):
         """ """
-        award_procedures = DisplayList()
-        award_procedures.add('', _(u'-- not specified --'))
-        for award_procedure in self.aq_parent.getModalita_affidamento():
-            award_procedures.add(award_procedure, award_procedure)
-        return award_procedures
-
-    def amountTypeVocab(self):
-        amountTypes = DisplayList()
-        amountTypes.add('', _(u'-- not specified --'))
-        for amountType in self.aq_parent.getNatura_importo():
-            amountTypes.add(amountType, amountType)
-        return amountTypes
-
-    def normVocabulary(self):
-        normTypes = DisplayList()
-        normTypes.add('', _(u'-- not specified --'))
-        for normType in self.aq_parent.getNorma_o_titolo():
-            normTypes.add(normType, normType)
-        normTypes.add('other', _(u'other'))
-        return normTypes
+        publications_type = DisplayList()
+        publications_type.add('', _(u'-- not specified --'))
+        for publication_type in self.aq_parent.getPublication_type_list():
+            publications_type.add(publication_type, publication_type)
+        return publications_type
 
     def show_alert(self):
         """
