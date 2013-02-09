@@ -21,12 +21,16 @@
         interface="..interfaces.atlinkcompenso.IATLinkCompenso"
         />
   </class>
-
   <class class=".atareaanticorruzione.ATAreaAnticorruzione">
     <require
         permission="zope2.View"
         interface="..interfaces.atareaanticorruzione.IATAreaAnticorruzione"
         />
   </class>
-
+  <class class=".atprocedimento190.ATProcedimento190">
+    <require
+        permission="zope2.View"
+        interface="..interfaces.atprocedimento190.IATProcedimento190"
+        />
+  </class>
 </configure>

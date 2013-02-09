@@ -73,5 +73,15 @@
       permission="zope.Public"
       />
 
+  <browser:page
+      for="..interfaces.atprocedimento190.IATProcedimento190"
+      name="procedimento190_view"
+      class=".vistaprocedimento190view.vistaprocedimento190View"
+      template="vistaprocedimento190view.pt"
+      allowed_interface=".vistaprocedimento190view.IVistaprocedimenti190View"
+      permission="zope.Public"
+      />
+
+
 </configure>
 
