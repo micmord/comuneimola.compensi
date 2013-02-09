@@ -16,7 +16,7 @@
     </script>
 
     <script type="text/javascript"
-            tal:attributes="src string:${portal/absolute_url}/++resource++comuneimola.compensi.javascript/areacompensi.js">
+            tal:attributes="src string:${portal/absolute_url}/++resource++comuneimola.compensi.javascript/areaanticorruzione.js">
     </script>
 
 </tal:js>
@@ -61,9 +61,9 @@
             <table id='compensitable' class="">
                 <thead>
                     <tr>
+                       <th i18n:translate="publication_type_label">Publication Type</th>
                        <th i18n:translate="compenso_title">Title</th>
-                       <th i18n:translate="fiscal_data_label">Fiscal Data</th>
-                       <th><span tal:omit-tag="" i18n:translate="amount_label">Amount</span> (&euro;)</th>
+                       <th i18n:translate="publication_code">Publication Code</th>
                        <th i18n:translate="office_label">Office</th>
                        <th i18n:translate="award_procedures_label">Procedures for the award</th>
                        <th i18n:translate="compenso_pubbl">Pubblication Date</th>
@@ -72,24 +72,21 @@
                 <tbody>
                    <tal:items tal:repeat="brain brains">
                        <tr>
+                           <td tal:content="brain/getPublication_type">Publication Type</td>
                            <td>
                               <a tal:attributes="href brain/getURL;
                                                  class string:state-${brain/review_state}">
                                 <tal:title content="brain/Title"></tal:title>
                               </a>
                            </td>
-                           <td tal:content="brain/getFiscal_data">Fiscal Data</td>
-                           <td class="moneyformat"
-                               tal:define="amount python: view.get_money_format(brain.getAmount)">
-                              <tal:amount tal:replace="amount">Amount</tal:amount>
-                           </td>
+                           <td tal:content="brain/getProcedure_code">Procedure Code</td>
                            <td tal:content="brain/getOffice">Office</td>
-                           <td tal:content="brain/getAward_procedures">Procedures for the award</td>
+                           <td tal:content="brain/getResponsible">Responsable of the procedure</td>
                            <td tal:define="effective_date brain/effective;
                                            is_valid_date python: effective_date.year() > 1900">
                                <tal:date tal:condition="is_valid_date"
                                    tal:content="python:context.toLocalizedTime(effective_date)"/>
-                            </td>
+                           </td>
                        </tr>
                    </tal:items>
                 </tbody>
