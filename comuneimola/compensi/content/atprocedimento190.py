@@ -63,7 +63,7 @@ ATProcedimento190Schema = folder.ATFolderSchema.copy() + atapi.Schema((
 
 ))
 
-ATProcedimento190Schema['title'].widget.label = _(u'title_label', default=u'Name of the Person/Subject/Object')
+ATProcedimento190Schema['title'].widget.label = _(u'title190_label', default=u'Name of the Person/Subject/Object')
 ATProcedimento190Schema['description'].widget.visible = False
 ATProcedimento190Schema['effectiveDate'].widget.description = _(u'effectiveDate_help', default=u'If you set this date the item will be visible starting from this date. If you do not insert the date the item will be published immediately with the action of publication.')
 ATProcedimento190Schema['effectiveDate'].widget.visible = {'edit': 'invisible', 'view': 'visible'}
