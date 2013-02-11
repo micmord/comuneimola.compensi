@@ -1,6 +1,13 @@
 Changelog
 =========
 
+1.X (anticorruzione branch)
+---------------------------
+- Hide ATProcedimento190 in the NavTree [micmord]
+- Add ATProcedimento190 and his view [micmord]
+- Add ATAreaAnticorruzione and his view [micmord]
+
+
 1.3 (unreleased)
 ----------------
 - Fiscal data: required, searchable and visible [micmord]
