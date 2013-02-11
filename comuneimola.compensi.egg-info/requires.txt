@@ -1,5 +1,0 @@
-setuptools
-collective.js.datatables
-
-[tests]
-zope.testing
