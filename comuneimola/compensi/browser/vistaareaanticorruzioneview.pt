@@ -58,7 +58,7 @@
                  </a>
             </div>
 
-            <table id='compensitable' class="">
+            <table id='anticorruzionetable' class="">
                 <thead>
                     <tr>
                        <th i18n:translate="publication_type_label">Type of publication</th>

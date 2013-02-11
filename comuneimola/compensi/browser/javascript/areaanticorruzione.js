@@ -19,21 +19,9 @@ jq(document).ready(function() {
             {
             return ((a < b) ? 1 : ((a > b) ? -1 : 0));
             },
-        "euro-ita-pre": function ( a )
-            {
-            return a.replace(/\./g,'').replace(',','.')*1;
-            },
-        "euro-ita-asc": function ( a, b )
-            {
-            return ((a < b) ? -1 : ((a > b) ? 1 : 0));
-            },
-        "euro-ita-desc": function ( a, b )
-            {
-            return ((a < b) ? 1 : ((a > b) ? -1 : 0));
-            }
         });
 
-    jq('#compensitable').dataTable({
+    jq('#anticorruzionetable').dataTable({
         "sPaginationType": "full_numbers",
         "oLanguage": {"sUrl": "@@collective.js.datatables.translation"},
         "aoColumns": [null, null, null, null, null, {"sType": "date-ita"} ]
