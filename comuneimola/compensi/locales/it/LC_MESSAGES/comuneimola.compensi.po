@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2013-02-11 07:30+0000\n"
+"POT-Creation-Date: 2013-02-20 06:28+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -106,9 +106,9 @@ msgid "award_procedures_help"
 msgstr "Selezionare la modalità di affidamento"
 
 #. Default: "Procedures for the award"
-#: ./browser/vistaareaanticorruzioneview.pt:68
 #: ./browser/vistaareacompensiview.pt:68
 #: ./browser/vistacompensoview.pt:70
+#: ./content/atareacompensi.py:27
 msgid "award_procedures_label"
 msgstr "Modalità di affidamento"
 
@@ -243,9 +243,9 @@ msgid "responsible_help"
 msgstr "Specificare il nome del responsabile del procedimento"
 
 #. Default: "Charge of the procedure"
+#: ./browser/vistaareaanticorruzioneview.pt:68
 #: ./browser/vistacompensoview.pt:64
 #: ./browser/vistaprocedimento190view.pt:47
-#: ./content/atcompenso.py:77
 msgid "responsible_label"
 msgstr "Responsabile del procedimento"
 

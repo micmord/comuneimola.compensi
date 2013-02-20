@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: comuneimola.compensi 1.0\n"
-"POT-Creation-Date: 2013-02-11 07:30+0000\n"
+"POT-Creation-Date: 2013-02-20 06:28+0000\n"
 "PO-Revision-Date: 2012-10-03 16:39 +0200\n"
 "Last-Translator: lucabel <luca.bellenghi@redturtle.it>\n"
 "Language-Team: Plone NL <plone-nl@lists.plone.org>\n"
@@ -107,9 +107,9 @@ msgid "award_procedures_help"
 msgstr ""
 
 #. Default: "Procedures for the award"
-#: ./browser/vistaareaanticorruzioneview.pt:68
 #: ./browser/vistaareacompensiview.pt:68
 #: ./browser/vistacompensoview.pt:70
+#: ./content/atareacompensi.py:27
 msgid "award_procedures_label"
 msgstr ""
 
@@ -244,9 +244,9 @@ msgid "responsible_help"
 msgstr ""
 
 #. Default: "Charge of the procedure"
+#: ./browser/vistaareaanticorruzioneview.pt:68
 #: ./browser/vistacompensoview.pt:64
 #: ./browser/vistaprocedimento190view.pt:47
-#: ./content/atcompenso.py:77
 msgid "responsible_label"
 msgstr ""
 
