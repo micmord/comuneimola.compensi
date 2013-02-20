@@ -65,7 +65,7 @@
                        <th i18n:translate="title190">Person/Subject/Object</th>
                        <th i18n:translate="publication_code">Publication Code</th>
                        <th i18n:translate="office_label">Office</th>
-                       <th i18n:translate="award_procedures_label">Procedures for the award</th>
+                       <th i18n:translate="responsible_label">Charge of the procedure</th>
                        <th i18n:translate="compenso_pubbl">Pubblication Date</th>
                     </tr>
                 </thead>
