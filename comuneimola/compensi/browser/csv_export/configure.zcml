@@ -11,4 +11,12 @@
       permission="zope.Public"
       />
 
+  <browser:page
+      for="comuneimola.compensi.interfaces.atareaanticorruzione.IATAreaAnticorruzione"
+      name="csv_export"
+      class=".export190documents.CsvExport"
+      allowed_interface=".export190documents.ICsvExport"
+      permission="zope.Public"
+      />
+
 </configure>
