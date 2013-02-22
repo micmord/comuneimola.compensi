@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: comuneimola.compensi 1.0\n"
-"POT-Creation-Date: 2013-02-20 06:28+0000\n"
+"POT-Creation-Date: 2013-02-22 15:53+0000\n"
 "PO-Revision-Date: 2012-10-03 16:39 +0200\n"
 "Last-Translator: lucabel <luca.bellenghi@redturtle.it>\n"
 "Language-Team: Plone NL <plone-nl@lists.plone.org>\n"
@@ -78,6 +78,16 @@ msgstr ""
 msgid "Publication type"
 msgstr ""
 
+#. Default: "An abstract of the anticorruzione area"
+#: ./content/atareaanticorruzione.py:26
+msgid "abstract_description"
+msgstr ""
+
+#. Default: "Abstract"
+#: ./content/atareaanticorruzione.py:25
+msgid "abstract_label"
+msgstr ""
+
 #. Default: "Insert the amount of remuneration (the amount is meant in Euro, format X.YY)"
 #: ./content/atcompenso.py:31
 msgid "amount_help"
@@ -114,7 +124,7 @@ msgid "award_procedures_label"
 msgstr ""
 
 #. Default: "Pubblication Date"
-#: ./browser/vistaareaanticorruzioneview.pt:69
+#: ./browser/vistaareaanticorruzioneview.pt:75
 #: ./browser/vistaareacompensiview.pt:69
 msgid "compenso_pubbl"
 msgstr ""
@@ -131,7 +141,7 @@ msgid "effectiveDate_help"
 msgstr ""
 
 #. Default: "CSV Export"
-#: ./browser/vistaareaanticorruzioneview.pt:54
+#: ./browser/vistaareaanticorruzioneview.pt:60
 #: ./browser/vistaareacompensiview.pt:54
 msgid "export_csv_label"
 msgstr ""
@@ -172,20 +182,20 @@ msgid "office_help"
 msgstr ""
 
 #. Default: "Office"
-#: ./browser/vistaareaanticorruzioneview.pt:67
+#: ./browser/vistaareaanticorruzioneview.pt:73
 #: ./browser/vistaareacompensiview.pt:67
 #: ./browser/vistacompensoview.pt:58
 msgid "office_label"
 msgstr ""
 
 #. Default: "Office List"
-#: ./content/atareaanticorruzione.py:18
+#: ./content/atareaanticorruzione.py:33
 #: ./content/atareacompensi.py:18
 msgid "office_list"
 msgstr ""
 
 #. Default: "List here offices for current area"
-#: ./content/atareaanticorruzione.py:20
+#: ./content/atareaanticorruzione.py:35
 #: ./content/atareacompensi.py:20
 msgid "office_list_description"
 msgstr ""
@@ -217,7 +227,7 @@ msgid "procedure_code_label"
 msgstr ""
 
 #. Default: "Publication Code"
-#: ./browser/vistaareaanticorruzioneview.pt:66
+#: ./browser/vistaareaanticorruzioneview.pt:72
 msgid "publication_code"
 msgstr ""
 
@@ -227,7 +237,7 @@ msgid "publication_type_help"
 msgstr ""
 
 #. Default: "Type of publication"
-#: ./browser/vistaareaanticorruzioneview.pt:64
+#: ./browser/vistaareaanticorruzioneview.pt:70
 #: ./content/atprocedimento190.py:49
 msgid "publication_type_label"
 msgstr ""
@@ -244,7 +254,7 @@ msgid "responsible_help"
 msgstr ""
 
 #. Default: "Charge of the procedure"
-#: ./browser/vistaareaanticorruzioneview.pt:68
+#: ./browser/vistaareaanticorruzioneview.pt:74
 #: ./browser/vistacompensoview.pt:64
 #: ./browser/vistaprocedimento190view.pt:47
 msgid "responsible_label"
@@ -339,7 +349,7 @@ msgid "sZeroRecords"
 msgstr ""
 
 #. Default: "Person/Subject/Object"
-#: ./browser/vistaareaanticorruzioneview.pt:65
+#: ./browser/vistaareaanticorruzioneview.pt:71
 msgid "title190"
 msgstr ""
 
@@ -374,12 +384,12 @@ msgid "type_of_norm_description"
 msgstr ""
 
 #. Default: "Type of publication list"
-#: ./content/atareaanticorruzione.py:27
+#: ./content/atareaanticorruzione.py:42
 msgid "type_of_publication_list"
 msgstr ""
 
 #. Default: "List here the type of publication you need"
-#: ./content/atareaanticorruzione.py:29
+#: ./content/atareaanticorruzione.py:44
 msgid "type_of_publication_list_description"
 msgstr ""
 

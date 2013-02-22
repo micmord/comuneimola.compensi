@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2013-02-20 06:28+0000\n"
+"POT-Creation-Date: 2013-02-22 15:53+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -77,6 +77,16 @@ msgstr "Data di pubblicazione"
 msgid "Publication type"
 msgstr "Tipo di pubblicazione"
 
+#. Default: "An abstract of the anticorruzione area"
+#: ./content/atareaanticorruzione.py:26
+msgid "abstract_description"
+msgstr "Un sommario dell'area anticorruzione"
+
+#. Default: "Abstract"
+#: ./content/atareaanticorruzione.py:25
+msgid "abstract_label"
+msgstr "Sommario"
+
 #. Default: "Insert the amount of remuneration (the amount is meant in Euro, format X.YY)"
 #: ./content/atcompenso.py:31
 msgid "amount_help"
@@ -113,7 +123,7 @@ msgid "award_procedures_label"
 msgstr "Modalità di affidamento"
 
 #. Default: "Pubblication Date"
-#: ./browser/vistaareaanticorruzioneview.pt:69
+#: ./browser/vistaareaanticorruzioneview.pt:75
 #: ./browser/vistaareacompensiview.pt:69
 msgid "compenso_pubbl"
 msgstr "Data di pubblicazione"
@@ -130,7 +140,7 @@ msgid "effectiveDate_help"
 msgstr "Se si imposta questa data l'elemento sarà visibile a partire da questa data. Se non viene inserita alcuna data l'elemento verrà pubblicato da subito con l'azione di pubblicazione."
 
 #. Default: "CSV Export"
-#: ./browser/vistaareaanticorruzioneview.pt:54
+#: ./browser/vistaareaanticorruzioneview.pt:60
 #: ./browser/vistaareacompensiview.pt:54
 msgid "export_csv_label"
 msgstr "Esportazione dei dati (CSV)"
@@ -171,20 +181,20 @@ msgid "office_help"
 msgstr "Selezionare l'ufficio responsabile"
 
 #. Default: "Office"
-#: ./browser/vistaareaanticorruzioneview.pt:67
+#: ./browser/vistaareaanticorruzioneview.pt:73
 #: ./browser/vistaareacompensiview.pt:67
 #: ./browser/vistacompensoview.pt:58
 msgid "office_label"
 msgstr "Ufficio"
 
 #. Default: "Office List"
-#: ./content/atareaanticorruzione.py:18
+#: ./content/atareaanticorruzione.py:33
 #: ./content/atareacompensi.py:18
 msgid "office_list"
 msgstr "Lista degli uffici"
 
 #. Default: "List here offices for current area"
-#: ./content/atareaanticorruzione.py:20
+#: ./content/atareaanticorruzione.py:35
 #: ./content/atareacompensi.py:20
 msgid "office_list_description"
 msgstr "Elencare qui gli uffici per l'area corrente"
@@ -216,7 +226,7 @@ msgid "procedure_code_label"
 msgstr "Procedimento amministrativo"
 
 #. Default: "Publication Code"
-#: ./browser/vistaareaanticorruzioneview.pt:66
+#: ./browser/vistaareaanticorruzioneview.pt:72
 msgid "publication_code"
 msgstr "Procedimento numero"
 
@@ -226,7 +236,7 @@ msgid "publication_type_help"
 msgstr "Inserisci le tipologie di procedimento"
 
 #. Default: "Type of publication"
-#: ./browser/vistaareaanticorruzioneview.pt:64
+#: ./browser/vistaareaanticorruzioneview.pt:70
 #: ./content/atprocedimento190.py:49
 msgid "publication_type_label"
 msgstr "Tipi di procedimento"
@@ -243,7 +253,7 @@ msgid "responsible_help"
 msgstr "Specificare il nome del responsabile del procedimento"
 
 #. Default: "Charge of the procedure"
-#: ./browser/vistaareaanticorruzioneview.pt:68
+#: ./browser/vistaareaanticorruzioneview.pt:74
 #: ./browser/vistacompensoview.pt:64
 #: ./browser/vistaprocedimento190view.pt:47
 msgid "responsible_label"
@@ -338,7 +348,7 @@ msgid "sZeroRecords"
 msgstr ""
 
 #. Default: "Person/Subject/Object"
-#: ./browser/vistaareaanticorruzioneview.pt:65
+#: ./browser/vistaareaanticorruzioneview.pt:71
 msgid "title190"
 msgstr "Persona/Soggetto/Oggetto"
 
@@ -373,12 +383,12 @@ msgid "type_of_norm_description"
 msgstr "Inserisci i valori per le possibili norme o titoli"
 
 #. Default: "Type of publication list"
-#: ./content/atareaanticorruzione.py:27
+#: ./content/atareaanticorruzione.py:42
 msgid "type_of_publication_list"
 msgstr "Tipologie di pubblicazioni"
 
 #. Default: "List here the type of publication you need"
-#: ./content/atareaanticorruzione.py:29
+#: ./content/atareaanticorruzione.py:44
 msgid "type_of_publication_list_description"
 msgstr "Inserisci le tipologie di pubblicazioni utilizzate per la 190/2012"
 

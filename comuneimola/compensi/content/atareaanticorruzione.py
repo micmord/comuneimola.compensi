@@ -12,7 +12,22 @@ from comuneimola.compensi.config import PROJECTNAME
 from comuneimola.compensi import compensiMessageFactory as _
 
 ATAreaAnticorruzioneSchema = folder.ATFolderSchema.copy() + atapi.Schema((
-
+    atapi.TextField(name='abstract',
+        required=False,
+        searchable=False,
+        #primary=True,
+        storage=atapi.AnnotationStorage(migrate=True),
+        validators=('isTidyHtmlWithCleanup',),
+        #default_content_type = 'text/restructured',
+        default_output_type = 'text/x-html-safe',
+        #allowable_content_types=('text/plain', 'text/restructured', 'text/html',),
+        widget=atapi.RichWidget(
+            label=_(u"abstract_label",default=u"Abstract"),
+            description=_(u"abstract_description","An abstract of the anticorruzione area"),
+            rows=15,
+            allow_file_upload=False
+        ),
+    ),
     atapi.LinesField(name='elenco_uffici',
         widget=atapi.LinesWidget(
             label=_(u"office_list",
