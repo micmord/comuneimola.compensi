@@ -13,5 +13,12 @@
       <role name="Manager" />
       <role name="Contributor" />
     </permission>
+    <permission name="comuneimola.compensi: Add ATAreaProvvedimenti" acquire="False">
+      <role name="Manager" />
+    </permission>
+    <permission name="comuneimola.compensi: Add ATProvvedimento" acquire="False">
+      <role name="Manager" />
+      <role name="Contributor" />
+    </permission>
   </permissions>
 </rolemap>

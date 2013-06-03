@@ -49,18 +49,58 @@
       action="@@areacompensi_view" />
 
 
- <browser:resourceDirectory
-     name="comuneimola.compensi.javascript"
-     directory="javascript"
-     />
+  <browser:resourceDirectory
+      name="comuneimola.compensi.javascript"
+      directory="javascript"
+      />
 
- <browser:resourceDirectory
-     name="comuneimola.compensi.css"
-     directory="css"
-     />
+  <browser:resourceDirectory
+      name="comuneimola.compensi.css"
+      directory="css"
+      />
 
- <browser:resourceDirectory
-     name="comuneimola.compensi.images"
-     directory="images"
-     />
+  <browser:resourceDirectory
+      name="comuneimola.compensi.images"
+      directory="images"
+      />
+
+  <browser:page
+      for="..interfaces.atprovvedimento.IATProvvedimento"
+      name="provvedimento_view"
+      class=".provvedimentoview.ProvvedimentoView"
+      template="provvedimentoview.pt"
+      allowed_interface=".provvedimentoview.IProvvedimentoView"
+      permission="zope.Public"
+      />
+
+  <browser:page
+      for="..interfaces.atareaprovvedimenti.IATAreaProvvedimenti"
+      name="areaprovvedimenti_view"
+      class=".areaprovvedimentiview.AreaProvvedimentiView"
+      template="areaprovvedimentiview.pt"
+      allowed_interface=".areaprovvedimentiview.IAreaProvvedimentiView"
+      permission="zope.Public"
+      />
+
+  <browser:page
+    zcml:condition="not-have plone-4"
+    for="..interfaces.atareaprovvedimenti.IATAreaProvvedimenti"
+    name="collective.js.datatables.translation"
+    class=".translation.Translations"
+    permission="zope2.View"
+    />
+
+<!--
+  <browser:menuItem
+      for="..interfaces.atProvvedimento.IATProvvedimento"
+      menu="plone_displayviews"
+      title="Provvedimento View"
+      action="@@Provvedimento_view" />
+
+  <browser:menuItem
+      for="..interfaces.atareaprovvedimenti.IATAreaProvvedimenti"
+      menu="plone_displayviews"
+      title="Area Provvedimenti View"
+      action="@@areaprovvedimenti_view" />
+-->
 </configure>

@@ -10,5 +10,8 @@
   <type type_id="ATLinkCompenso">
    <bound-workflow workflow_id="compensi_publication_workflow"/>
   </type>
+  <type type_id="ATProvvedimento">
+   <bound-workflow workflow_id="compensi_publication_workflow"/>
+  </type>
  </bindings>
 </object>

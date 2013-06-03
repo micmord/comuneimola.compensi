@@ -9,16 +9,32 @@
         interface="..interfaces.atareacompensi.IATAreaCompensi"
         />
   </class>
+
   <class class=".atcompenso.ATCompenso">
     <require
         permission="zope2.View"
         interface="..interfaces.atcompenso.IATCompenso"
         />
   </class>
+
   <class class=".atlinkcompenso.ATLinkCompenso">
     <require
         permission="zope2.View"
         interface="..interfaces.atlinkcompenso.IATLinkCompenso"
+        />
+  </class>
+
+  <class class=".atareaprovvedimenti.ATAreaProvvedimenti">
+    <require
+        permission="zope2.View"
+        interface="..interfaces.atareaprovvedimenti.IATAreaProvvedimenti"
+        />
+  </class>
+
+  <class class=".atprovvedimento.ATProvvedimento">
+    <require
+        permission="zope2.View"
+        interface="..interfaces.atprovvedimento.IATProvvedimento"
         />
   </class>
 

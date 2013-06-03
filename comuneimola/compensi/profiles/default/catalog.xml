@@ -4,4 +4,5 @@
     <column value="getAmount"/>
     <column value="getOffice"/>
     <column value="getAward_procedures"/>
+    <column value="getProvision"/>
 </object>

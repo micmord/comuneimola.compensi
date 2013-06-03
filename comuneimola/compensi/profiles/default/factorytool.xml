@@ -12,5 +12,7 @@
     <type portal_type="ATAreaCompensi" />
     <type portal_type="ATCompenso" />
     <type portal_type="ATLinkCompenso"/>
+    <type portal_type="ATAreaProvvedimenti"/>
+    <type portal_type="ATProvvedimento"/>
   </factorytypes>
 </object>
