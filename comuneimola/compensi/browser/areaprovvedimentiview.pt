@@ -65,7 +65,7 @@
                        <th i18n:translate="provision_id">Title</th>
                        <th i18n:translate="provision_description">Description</th>
                        <th><span tal:omit-tag="" i18n:translate="amount_label">Amount</span> (&euro;)</th>
-                       <th i18n:translate="compenso_pubbl">Pubblication Date</th>
+                       <th i18n:translate="provision_pubbl">Pubblication Date</th>
                     </tr>
                 </thead>
                 <tbody>

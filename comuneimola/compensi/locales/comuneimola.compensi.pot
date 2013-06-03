@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: comuneimola.compensi 1.0\n"
-"POT-Creation-Date: 2013-02-14 16:28+0000\n"
+"POT-Creation-Date: 2013-06-03 11:08+0000\n"
 "PO-Revision-Date: 2012-10-03 16:39 +0200\n"
 "Last-Translator: lucabel <luca.bellenghi@redturtle.it>\n"
 "Language-Team: Plone NL <plone-nl@lists.plone.org>\n"
@@ -16,6 +16,7 @@ msgstr ""
 "Domain: comuneimola.compensi\n"
 
 #: ./content/atcompenso.py:136
+#: ./content/atprovvedimento.py:102
 msgid "-- not specified --"
 msgstr ""
 
@@ -26,12 +27,24 @@ msgstr ""
 msgid "AT Compenso"
 msgstr ""
 
+#: ./profiles/default/types/ATProvvedimento.xml
+msgid "AT Provvedimento"
+msgstr ""
+
 #: ./profiles/default/types/ATAreaCompensi.xml
 msgid "ATAreaCompensi"
 msgstr ""
 
+#: ./profiles/default/types/ATAreaProvvedimenti.xml
+msgid "ATAreaProvvedimenti"
+msgstr ""
+
 #: ./profiles/default/types/ATCompenso.xml
 msgid "ATCompenso"
+msgstr ""
+
+#: ./profiles/default/types/ATProvvedimento.xml
+msgid "ATProvvedimento"
 msgstr ""
 
 msgid "Archetpes that allow to handle compensation"
@@ -40,6 +53,7 @@ msgstr ""
 msgid "Area Compensi View"
 msgstr ""
 
+#: ./browser/provvedimentoview.pt:71
 #: ./browser/vistacompensoview.pt:97
 msgid "Attachments"
 msgstr ""
@@ -55,19 +69,41 @@ msgstr ""
 msgid "If you select 'other' in the previous form, you must write something here."
 msgstr ""
 
+#: ./browser/provvedimentoview.pt:52
 #: ./browser/vistacompensoview.pt:78
 msgid "Publication date"
 msgstr ""
 
+#. Default: "An abstract of the provision area"
+#: ./content/atareaprovvedimenti.py:27
+msgid "abstract_area_help"
+msgstr ""
+
+#. Default: "Abstract"
+#: ./content/atareaprovvedimenti.py:26
+msgid "abstract_area_label"
+msgstr ""
+
+#. Default: "An abstract of the provision"
+#: ./content/atprovvedimento.py:45
+msgid "abstract_help"
+msgstr ""
+
+#. Default: "Abstract"
+#: ./content/atprovvedimento.py:44
+msgid "abstract_label"
+msgstr ""
+
 #. Default: "Insert the amount of remuneration (the amount is meant in Euro, format X.YY)"
 #: ./content/atcompenso.py:31
+#: ./content/atprovvedimento.py:55
 msgid "amount_help"
 msgstr ""
 
 #. Default: "Amount"
+#: ./browser/areaprovvedimentiview.pt:67
+#: ./browser/provvedimentoview.pt:33
 #: ./browser/vistaareacompensiview.pt:66
-#: ./browser/vistacompensoview.pt:35
-#: ./content/atcompenso.py:30
 msgid "amount_label"
 msgstr ""
 
@@ -104,12 +140,29 @@ msgstr ""
 msgid "compenso_title"
 msgstr ""
 
+#. Default: "Provision description"
+#: ./browser/provvedimentoview.pt:29
+msgid "description"
+msgstr ""
+
+#. Default: "Provision description"
+#: ./content/atprovvedimento.py:72
+msgid "description_provision_label"
+msgstr ""
+
+#. Default: "Provisions Area description"
+#: ./content/atareaprovvedimenti.py:44
+msgid "description_provisionsArea_label"
+msgstr ""
+
 #. Default: "If you set this date the item will be visible starting from this date. If you do not insert the date the item will be published immediately with the action of publication."
 #: ./content/atcompenso.py:106
+#: ./content/atprovvedimento.py:73
 msgid "effectiveDate_help"
 msgstr ""
 
 #. Default: "CSV Export"
+#: ./browser/areaprovvedimentiview.pt:54
 #: ./browser/vistaareacompensiview.pt:54
 msgid "export_csv_label"
 msgstr ""
@@ -141,6 +194,7 @@ msgid "norm_label"
 msgstr ""
 
 #. Default: "Note"
+#: ./browser/provvedimentoview.pt:62
 #: ./browser/vistacompensoview.pt:88
 #: ./content/atcompenso.py:96
 msgid "note_label"
@@ -169,6 +223,7 @@ msgid "office_list_description"
 msgstr ""
 
 #: ./content/atcompenso.py:161
+#: ./content/atprovvedimento.py:105
 msgid "other"
 msgstr ""
 
@@ -181,6 +236,48 @@ msgstr ""
 #: ./browser/vistacompensoview.pt:52
 #: ./content/atcompenso.py:58
 msgid "other_norm_label"
+msgstr ""
+
+#. Default: "If you select other in the previous field, write here the value (max 60 characters)"
+#: ./content/atprovvedimento.py:29
+msgid "other_provision_help"
+msgstr ""
+
+#. Default: "Other provision"
+#: ./browser/provvedimentoview.pt:44
+#: ./content/atprovvedimento.py:28
+msgid "other_provision_label"
+msgstr ""
+
+#. Default: "Description"
+#: ./browser/areaprovvedimentiview.pt:66
+msgid "provision_description"
+msgstr ""
+
+#. Default: "Insert a short text to describe the provision."
+#: ./content/atprovvedimento.py:23
+msgid "provision_help"
+msgstr ""
+
+#. Default: "Title"
+#: ./browser/areaprovvedimentiview.pt:65
+msgid "provision_id"
+msgstr ""
+
+#. Default: "Provision"
+#: ./browser/provvedimentoview.pt:38
+#: ./content/atprovvedimento.py:22
+msgid "provision_label"
+msgstr ""
+
+#. Default: "Pubblication Date"
+#: ./browser/areaprovvedimentiview.pt:68
+msgid "provision_pubbl"
+msgstr ""
+
+#. Default: "Provision"
+#: ./browser/areaprovvedimentiview.pt:64
+msgid "provision_type"
 msgstr ""
 
 #. Default: "List here the procedures for the award"
@@ -292,6 +389,16 @@ msgstr ""
 msgid "title_label"
 msgstr ""
 
+#. Default: "Provision id"
+#: ./content/atprovvedimento.py:71
+msgid "title_provision_label"
+msgstr ""
+
+#. Default: "ProvisionsArea Title"
+#: ./content/atareaprovvedimenti.py:43
+msgid "title_provisionsArea_label"
+msgstr ""
+
 #. Default: "List here the types of amount"
 #: ./content/atareacompensi.py:38
 msgid "type_of_amount_description"
@@ -310,6 +417,16 @@ msgstr ""
 #. Default: "List here the norm or title"
 #: ./content/atareacompensi.py:47
 msgid "type_of_norm_description"
+msgstr ""
+
+#. Default: "List here the types of provision"
+#: ./content/atareaprovvedimenti.py:36
+msgid "types_of_provision_help"
+msgstr ""
+
+#. Default: "Types of provision"
+#: ./content/atareaprovvedimenti.py:34
+msgid "types_of_provision_label"
 msgstr ""
 
 #. Default: "Warning"

@@ -42,7 +42,7 @@ ATProvvedimentoSchema = folder.ATFolderSchema.copy() + atapi.Schema((
         #allowable_content_types=('text/plain', 'text/restructured', 'text/html',),
         widget=atapi.RichWidget(
             label=_(u"abstract_label",default=u"Abstract"),
-            description=_(u"abstract_description","An abstract of the provision"),
+            description=_(u"abstract_help","An abstract of the provision"),
             rows=15,
             allow_file_upload=False
         ),
@@ -68,8 +68,8 @@ ATProvvedimentoSchema = folder.ATFolderSchema.copy() + atapi.Schema((
     ),
 ))
 
-ATProvvedimentoSchema['title'].widget.label = _(u'title_label', default=u'Provision id')
-ATProvvedimentoSchema['description'].widget.label = _(u'description_label', default=u'Provision description')
+ATProvvedimentoSchema['title'].widget.label = _(u'title_provision_label', default=u'Provision id')
+ATProvvedimentoSchema['description'].widget.label = _(u'description_provision_label', default=u'Provision description')
 ATProvvedimentoSchema['effectiveDate'].widget.description = _(u'effectiveDate_help', default=u'If you set this date the item will be visible starting from this date. If you do not insert the date the item will be published immediately with the action of publication.')
 ATProvvedimentoSchema['effectiveDate'].widget.visible = {'edit': 'invisible', 'view': 'visible'}
 ATProvvedimentoSchema['expirationDate'].widget.visible = {'edit': 'invisible', 'view': 'visible'}
@@ -100,7 +100,7 @@ class ATProvvedimento(folder.ATFolder):
     def provisionVocabulary(self):
         provisionTypes = DisplayList()
         provisionTypes.add('', _(u'-- not specified --'))
-        for provisionType in self.aq_parent.getTipo_provvedimento():
+        for provisionType in self.aq_parent.getTipi_provvedimento():
             provisionTypes.add(provisionType, provisionType)
         provisionTypes.add('other', _(u'other'))
         return provisionTypes

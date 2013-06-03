@@ -23,22 +23,25 @@ ATAreaProvvedimentiSchema = folder.ATFolderSchema.copy() + atapi.Schema((
         default_output_type = 'text/x-html-safe',
         #allowable_content_types=('text/plain', 'text/restructured', 'text/html',),
         widget=atapi.RichWidget(
-            label=_(u"abstract_label",default=u"Abstract"),
-            description=_(u"abstract_description","An abstract of the provision area"),
+            label=_(u"abstract_area_label",default=u"Abstract"),
+            description=_(u"abstract_area_help","An abstract of the provision area"),
             rows=15,
             allow_file_upload=False
         ),
     ),
-    atapi.LinesField(name='tipo_provvedimento',
+    atapi.LinesField(name='tipi_provvedimento',
         widget=atapi.LinesWidget(
-            label=_(u"type_of_provision",
-                    default=u"Type of provision"),
-            description=_(u"type_of_provision",
-                          default=u"List here the type of provision"),
+            label=_(u"types_of_provision_label",
+                    default=u"Types of provision"),
+            description=_(u"types_of_provision_help",
+                          default=u"List here the types of provision"),
             ),
         required=False,
     ),
 ))
+
+ATAreaProvvedimentiSchema['title'].widget.label = _(u'title_provisionsArea_label', default=u'ProvisionsArea Title')
+ATAreaProvvedimentiSchema['description'].widget.label = _(u'description_provisionsArea_label', default=u'Provisions Area description')
 
 ATAreaProvvedimentiSchema['title'].storage = atapi.AnnotationStorage()
 ATAreaProvvedimentiSchema['description'].storage = atapi.AnnotationStorage()
