@@ -80,3 +80,12 @@ table.dataTable tr.even { background-color: white; }
 .dataTables_filter {
 	margin-bottom: 1em;
 }
+
+
+/**********************
+ * AREA PROVVEDIMENTI *
+ **********************/
+
+.areaCompensi div#areaProvvedimentiAbstract{
+	margin:1em;
+}
