@@ -11,4 +11,12 @@
       permission="zope.Public"
       />
 
+  <browser:page
+      for="comuneimola.compensi.interfaces.atareaprovvedimenti.IATAreaProvvedimenti"
+      name="csv_export"
+      class=".export_provisions.CsvExport"
+      allowed_interface=".export_provisions.ICsvExport"
+      permission="zope.Public"
+      />
+
 </configure>
