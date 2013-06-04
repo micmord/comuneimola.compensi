@@ -24,15 +24,9 @@
 
             <div tal:replace="structure provider:plone.abovecontenttitle" />
             <h1 class="documentFirstHeading" tal:content="here/Title"></h1>
-
-            <div class="provvedimentoField">
-                <label><span tal:omit-tag="" i18n:translate="description">Provision description</span>:</label>
-                <h2 tal:content="here/Description">Description</h2>
-            </div>
-            <div class="provvedimentoField">
-                <label><span tal:omit-tag="" i18n:translate="amount_label">Amount</span>:</label>
-                <tal:amount tal:content="python: view.get_money_format(here.getAmount())"/>
-                &euro;
+            <div class="documentDescription">
+                <label><span tal:omit-tag="" i18n:translate="description_label">Provision description</span>:</label>
+                <h3 tal:content="here/Description">Description</h3>
             </div>
             <div class="provvedimentoField">
                 <label><span tal:omit-tag="" i18n:translate="provision_label">Provision</span>:</label>
@@ -46,6 +40,17 @@
                     Body text
                 </metal:field>
             </div>
+            <div class="provvedimentoField" tal:condition="here/getOther_provision">
+                <label><span tal:omit-tag="" i18n:translate="other_provision_label">Other provision</span>:</label>
+                <metal:field use-macro="python:context.widget('other_provision', mode='view')">
+                    Body text
+                </metal:field>
+            </div>
+            <div class="provvedimentoField">
+                <label><span tal:omit-tag="" i18n:translate="amount_label">Amount</span>:</label>
+                <tal:amount tal:content="python: view.get_money_format(here.getAmount())"/>
+                &euro;
+            </div>
             <div class="provvedimentoField" tal:condition="here/getEffectiveDate">
                 <div class="effectiveDateField">
                     <div>
@@ -58,14 +63,20 @@
                 </div>
                 <div class="visualClear"><!-- --></div>
             </div>
+            <div id="provvedimentoAbstract" tal:condition="here/getAbstract">
+                <label><span tal:omit-tag="" i18n:translate="abstract_label">Abstract</span>:</label>
+                <br />
+                <metal:field use-macro="python:context.widget('abstract', mode='view')">
+                    Abstract text
+                </metal:field>
+            </div>
             <div class="provvedimentoField" tal:condition="here/getNote">
                 <label><span tal:omit-tag="" i18n:translate="note_label">Note</span>:</label>
                 <br />
                 <metal:field use-macro="python:context.widget('note', mode='view')">
-                    Body text
+                    Note text
                 </metal:field>
             </div>
-
             <div class="provvedimentoAttachments"
                  tal:condition="python:context.getFolderContents()">
                 <h3 i18n:translate="">Attachments</h3>

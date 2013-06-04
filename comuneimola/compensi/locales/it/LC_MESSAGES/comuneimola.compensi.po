@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2013-06-03 11:08+0000\n"
+"POT-Creation-Date: 2013-06-04 09:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -52,7 +52,7 @@ msgstr "Archetype che permette di gestire un compenso"
 msgid "Area Compensi View"
 msgstr "Vista per l'area compensi"
 
-#: ./browser/provvedimentoview.pt:71
+#: ./browser/provvedimentoview.pt:82
 #: ./browser/vistacompensoview.pt:97
 msgid "Attachments"
 msgstr "Allegati"
@@ -68,7 +68,7 @@ msgstr "Dati fiscali"
 msgid "If you select 'other' in the previous form, you must write something here."
 msgstr "È stato scelto altro nel campo precedente. Questo valore diventa obbligatorio."
 
-#: ./browser/provvedimentoview.pt:52
+#: ./browser/provvedimentoview.pt:57
 #: ./browser/vistacompensoview.pt:78
 msgid "Publication date"
 msgstr "Data di pubblicazione"
@@ -89,6 +89,7 @@ msgid "abstract_help"
 msgstr "Un riassunto del contenuto del Provvedimento"
 
 #. Default: "Abstract"
+#: ./browser/provvedimentoview.pt:67
 #: ./content/atprovvedimento.py:44
 msgid "abstract_label"
 msgstr "Contenuto"
@@ -100,8 +101,8 @@ msgid "amount_help"
 msgstr "Inserire l'importo (la cifra si intende in Euro, nel formato X.YY se ci sono centesimi)"
 
 #. Default: "Amount"
-#: ./browser/areaprovvedimentiview.pt:67
-#: ./browser/provvedimentoview.pt:33
+#: ./browser/areaprovvedimentiview.pt:73
+#: ./browser/provvedimentoview.pt:50
 #: ./browser/vistaareacompensiview.pt:66
 msgid "amount_label"
 msgstr "Importo"
@@ -140,9 +141,9 @@ msgid "compenso_title"
 msgstr "Nome del beneficiario"
 
 #. Default: "Provision description"
-#: ./browser/provvedimentoview.pt:29
-msgid "description"
-msgstr "L'oggetto del provvedimento"
+#: ./browser/provvedimentoview.pt:28
+msgid "description_label"
+msgstr "Oggetto"
 
 #. Default: "Provision description"
 #: ./content/atprovvedimento.py:72
@@ -161,7 +162,7 @@ msgid "effectiveDate_help"
 msgstr "Se si imposta questa data l'elemento sarà visibile a partire da questa data. Se non viene inserita alcuna data l'elemento verrà pubblicato da subito con l'azione di pubblicazione."
 
 #. Default: "CSV Export"
-#: ./browser/areaprovvedimentiview.pt:54
+#: ./browser/areaprovvedimentiview.pt:60
 #: ./browser/vistaareacompensiview.pt:54
 msgid "export_csv_label"
 msgstr "Esportazione dei dati (CSV)"
@@ -193,7 +194,7 @@ msgid "norm_label"
 msgstr "Norma o titolo"
 
 #. Default: "Note"
-#: ./browser/provvedimentoview.pt:62
+#: ./browser/provvedimentoview.pt:74
 #: ./browser/vistacompensoview.pt:88
 #: ./content/atcompenso.py:96
 msgid "note_label"
@@ -243,13 +244,13 @@ msgid "other_provision_help"
 msgstr "Se si è scelto il valore altro nel campo precedente, indicare qui la normativa o il titolo (massimo 60 caratteri)"
 
 #. Default: "Other provision"
-#: ./browser/provvedimentoview.pt:44
+#: ./browser/provvedimentoview.pt:38
 #: ./content/atprovvedimento.py:28
 msgid "other_provision_label"
 msgstr "Altro"
 
 #. Default: "Description"
-#: ./browser/areaprovvedimentiview.pt:66
+#: ./browser/areaprovvedimentiview.pt:72
 msgid "provision_description"
 msgstr "Oggetto"
 
@@ -259,23 +260,23 @@ msgid "provision_help"
 msgstr "Una breve descrizione del Provvedimento"
 
 #. Default: "Title"
-#: ./browser/areaprovvedimentiview.pt:65
+#: ./browser/areaprovvedimentiview.pt:71
 msgid "provision_id"
 msgstr "Estremi"
 
 #. Default: "Provision"
-#: ./browser/provvedimentoview.pt:38
+#: ./browser/provvedimentoview.pt:32
 #: ./content/atprovvedimento.py:22
 msgid "provision_label"
 msgstr "Provvedimento"
 
 #. Default: "Pubblication Date"
-#: ./browser/areaprovvedimentiview.pt:68
+#: ./browser/areaprovvedimentiview.pt:74
 msgid "provision_pubbl"
 msgstr "Data pubblicazione"
 
 #. Default: "Provision"
-#: ./browser/areaprovvedimentiview.pt:64
+#: ./browser/areaprovvedimentiview.pt:70
 msgid "provision_type"
 msgstr "Tipo di Provvedimento"
 

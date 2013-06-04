@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: comuneimola.compensi 1.0\n"
-"POT-Creation-Date: 2013-06-03 11:08+0000\n"
+"POT-Creation-Date: 2013-06-04 09:17+0000\n"
 "PO-Revision-Date: 2012-10-03 16:39 +0200\n"
 "Last-Translator: lucabel <luca.bellenghi@redturtle.it>\n"
 "Language-Team: Plone NL <plone-nl@lists.plone.org>\n"
@@ -53,7 +53,7 @@ msgstr ""
 msgid "Area Compensi View"
 msgstr ""
 
-#: ./browser/provvedimentoview.pt:71
+#: ./browser/provvedimentoview.pt:82
 #: ./browser/vistacompensoview.pt:97
 msgid "Attachments"
 msgstr ""
@@ -69,7 +69,7 @@ msgstr ""
 msgid "If you select 'other' in the previous form, you must write something here."
 msgstr ""
 
-#: ./browser/provvedimentoview.pt:52
+#: ./browser/provvedimentoview.pt:57
 #: ./browser/vistacompensoview.pt:78
 msgid "Publication date"
 msgstr ""
@@ -90,6 +90,7 @@ msgid "abstract_help"
 msgstr ""
 
 #. Default: "Abstract"
+#: ./browser/provvedimentoview.pt:67
 #: ./content/atprovvedimento.py:44
 msgid "abstract_label"
 msgstr ""
@@ -101,8 +102,8 @@ msgid "amount_help"
 msgstr ""
 
 #. Default: "Amount"
-#: ./browser/areaprovvedimentiview.pt:67
-#: ./browser/provvedimentoview.pt:33
+#: ./browser/areaprovvedimentiview.pt:73
+#: ./browser/provvedimentoview.pt:50
 #: ./browser/vistaareacompensiview.pt:66
 msgid "amount_label"
 msgstr ""
@@ -141,8 +142,8 @@ msgid "compenso_title"
 msgstr ""
 
 #. Default: "Provision description"
-#: ./browser/provvedimentoview.pt:29
-msgid "description"
+#: ./browser/provvedimentoview.pt:28
+msgid "description_label"
 msgstr ""
 
 #. Default: "Provision description"
@@ -162,7 +163,7 @@ msgid "effectiveDate_help"
 msgstr ""
 
 #. Default: "CSV Export"
-#: ./browser/areaprovvedimentiview.pt:54
+#: ./browser/areaprovvedimentiview.pt:60
 #: ./browser/vistaareacompensiview.pt:54
 msgid "export_csv_label"
 msgstr ""
@@ -194,7 +195,7 @@ msgid "norm_label"
 msgstr ""
 
 #. Default: "Note"
-#: ./browser/provvedimentoview.pt:62
+#: ./browser/provvedimentoview.pt:74
 #: ./browser/vistacompensoview.pt:88
 #: ./content/atcompenso.py:96
 msgid "note_label"
@@ -244,13 +245,13 @@ msgid "other_provision_help"
 msgstr ""
 
 #. Default: "Other provision"
-#: ./browser/provvedimentoview.pt:44
+#: ./browser/provvedimentoview.pt:38
 #: ./content/atprovvedimento.py:28
 msgid "other_provision_label"
 msgstr ""
 
 #. Default: "Description"
-#: ./browser/areaprovvedimentiview.pt:66
+#: ./browser/areaprovvedimentiview.pt:72
 msgid "provision_description"
 msgstr ""
 
@@ -260,23 +261,23 @@ msgid "provision_help"
 msgstr ""
 
 #. Default: "Title"
-#: ./browser/areaprovvedimentiview.pt:65
+#: ./browser/areaprovvedimentiview.pt:71
 msgid "provision_id"
 msgstr ""
 
 #. Default: "Provision"
-#: ./browser/provvedimentoview.pt:38
+#: ./browser/provvedimentoview.pt:32
 #: ./content/atprovvedimento.py:22
 msgid "provision_label"
 msgstr ""
 
 #. Default: "Pubblication Date"
-#: ./browser/areaprovvedimentiview.pt:68
+#: ./browser/areaprovvedimentiview.pt:74
 msgid "provision_pubbl"
 msgstr ""
 
 #. Default: "Provision"
-#: ./browser/areaprovvedimentiview.pt:64
+#: ./browser/areaprovvedimentiview.pt:70
 msgid "provision_type"
 msgstr ""
 

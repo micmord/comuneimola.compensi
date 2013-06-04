@@ -22,3 +22,15 @@
 .moneyformat{
     text-align: right;
 }
+
+/*****************************
+* Vista per AT Provvedimento *
+******************************/
+
+.provvedimentoField {
+    margin: 0.5em 0em;
+}
+
+div#provvedimentoAbstract {
+    margin: 1em;
+}
