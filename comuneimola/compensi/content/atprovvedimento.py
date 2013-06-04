@@ -68,6 +68,8 @@ ATProvvedimentoSchema = folder.ATFolderSchema.copy() + atapi.Schema((
     ),
 ))
 
+
+ATProvvedimentoSchema['description'].required = True
 ATProvvedimentoSchema['title'].widget.label = _(u'title_provision_label', default=u'Provision id')
 ATProvvedimentoSchema['description'].widget.label = _(u'description_provision_label', default=u'Provision description')
 ATProvvedimentoSchema['effectiveDate'].widget.description = _(u'effectiveDate_help', default=u'If you set this date the item will be visible starting from this date. If you do not insert the date the item will be published immediately with the action of publication.')
