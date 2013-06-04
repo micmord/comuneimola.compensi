@@ -39,4 +39,6 @@ class ProvvedimentoView(BrowserView):
         """
         call the money format utility and convert the value
         """
+        if value == "":
+            return None
         return self.mf.moneyfmt(value)
