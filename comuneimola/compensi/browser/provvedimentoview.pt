@@ -31,19 +31,13 @@
             <div class="provvedimentoField">
                 <label><span tal:omit-tag="" i18n:translate="provision_label">Provision</span>:</label>
                 <metal:field use-macro="python:context.widget('provision', mode='view')">
-                    Body text
+                    Provision text
                 </metal:field>
             </div>
-            <div class="provvedimentoField" tal:condition="here/getOther_provision">
+            <div class="otherProvvedimentoField" tal:condition="here/getOther_provision">
                 <label><span tal:omit-tag="" i18n:translate="other_provision_label">Other provision</span>:</label>
                 <metal:field use-macro="python:context.widget('other_provision', mode='view')">
-                    Body text
-                </metal:field>
-            </div>
-            <div class="provvedimentoField" tal:condition="here/getOther_provision">
-                <label><span tal:omit-tag="" i18n:translate="other_provision_label">Other provision</span>:</label>
-                <metal:field use-macro="python:context.widget('other_provision', mode='view')">
-                    Body text
+                    Other Provision text
                 </metal:field>
             </div>
             <div class="provvedimentoField">
