@@ -6,7 +6,7 @@
  <property name="title" i18n:translate="">ATProvvedimento</property>
  <property name="description" i18n:translate="">AT Provvedimento</property>
  <property
-    name="content_icon">++resource++comuneimola.compensi.images/compensi.png</property>
+    name="content_icon">++resource++comuneimola.compensi.images/provvedimento.png</property>
  <property name="content_meta_type">ATProvvedimento</property>
  <property name="product">comuneimola.compensi</property>
  <property name="factory">addATProvvedimento</property>
