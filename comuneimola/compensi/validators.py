@@ -4,6 +4,7 @@ from zope.interface import implements
 from comuneimola.compensi import compensiMessageFactory as _
 from Products.Archetypes.interfaces import IObjectPostValidation
 from comuneimola.compensi.interfaces.atcompenso import IATCompenso
+from comuneimola.compensi.interfaces.atprovvedimento import IATProvvedimento
 from comuneimola.compensi import compensiMessageFactory as mf
 from zope.component import adapts
 from zope.i18n import translate
@@ -52,4 +53,21 @@ class CompensiPostValidation(object):
         other_norm = request.get('other_norm')
         if norm == 'other' and other_norm.strip() == '':
             return {'other_norm': _(u"If you select 'other' in the previous form, you must write something here.")}
+        return {}
+
+class ProvvedimentoPostValidation(object):
+    implements(IObjectPostValidation)
+    adapts(IATProvvedimento)
+
+    def __init__(self, context):
+        self.context = context
+
+    def __call__(self, request):
+        """Validate the context object. Return a dict with keys of fieldnames
+        and values of error strings.
+        """
+        provision = request.get('provision')
+        other_provision = request.get('other_provision')
+        if provision == 'other' and other_provision.strip() == '':
+            return {'other_provision': _(u"If you select 'other' in the previous form, you must write something here.")}
         return {}

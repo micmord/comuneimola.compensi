@@ -27,6 +27,12 @@
       factory=".validators.CompensiPostValidation"
       />
 
+  <subscriber
+      provides="Products.Archetypes.interfaces.IObjectPostValidation"
+      factory=".validators.ProvvedimentoPostValidation"
+      />
+
+
   <utility
     provides="comuneimola.compensi.interfaces.atareacompensi.IMoneyFormat"
     factory=".utilities.MoneyFormat" />
