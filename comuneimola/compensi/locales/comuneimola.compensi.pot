@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: comuneimola.compensi 1.0\n"
-"POT-Creation-Date: 2013-06-04 09:17+0000\n"
+"POT-Creation-Date: 2013-06-07 13:51+0000\n"
 "PO-Revision-Date: 2012-10-03 16:39 +0200\n"
 "Last-Translator: lucabel <luca.bellenghi@redturtle.it>\n"
 "Language-Team: Plone NL <plone-nl@lists.plone.org>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Domain: comuneimola.compensi\n"
 
 #: ./content/atcompenso.py:136
-#: ./content/atprovvedimento.py:102
+#: ./content/atprovvedimento.py:104
 msgid "-- not specified --"
 msgstr ""
 
@@ -53,7 +53,7 @@ msgstr ""
 msgid "Area Compensi View"
 msgstr ""
 
-#: ./browser/provvedimentoview.pt:82
+#: ./browser/provvedimentoview.pt:76
 #: ./browser/vistacompensoview.pt:97
 msgid "Attachments"
 msgstr ""
@@ -65,11 +65,11 @@ msgstr ""
 msgid "Fiscal data"
 msgstr ""
 
-#: ./validators.py:54
+#: ./validators.py:55
 msgid "If you select 'other' in the previous form, you must write something here."
 msgstr ""
 
-#: ./browser/provvedimentoview.pt:57
+#: ./browser/provvedimentoview.pt:51
 #: ./browser/vistacompensoview.pt:78
 msgid "Publication date"
 msgstr ""
@@ -90,20 +90,24 @@ msgid "abstract_help"
 msgstr ""
 
 #. Default: "Abstract"
-#: ./browser/provvedimentoview.pt:67
+#: ./browser/provvedimentoview.pt:61
 #: ./content/atprovvedimento.py:44
 msgid "abstract_label"
 msgstr ""
 
+#. Default: "Insert the amount of remuneration if expected, else 0 (the amount is meant in Euro, format X.YY)."
+#: ./content/atprovvedimento.py:55
+msgid "amountExpected_help"
+msgstr ""
+
 #. Default: "Insert the amount of remuneration (the amount is meant in Euro, format X.YY)"
 #: ./content/atcompenso.py:31
-#: ./content/atprovvedimento.py:55
 msgid "amount_help"
 msgstr ""
 
 #. Default: "Amount"
 #: ./browser/areaprovvedimentiview.pt:73
-#: ./browser/provvedimentoview.pt:50
+#: ./browser/provvedimentoview.pt:44
 #: ./browser/vistaareacompensiview.pt:66
 msgid "amount_label"
 msgstr ""
@@ -147,7 +151,7 @@ msgid "description_label"
 msgstr ""
 
 #. Default: "Provision description"
-#: ./content/atprovvedimento.py:72
+#: ./content/atprovvedimento.py:74
 msgid "description_provision_label"
 msgstr ""
 
@@ -158,7 +162,7 @@ msgstr ""
 
 #. Default: "If you set this date the item will be visible starting from this date. If you do not insert the date the item will be published immediately with the action of publication."
 #: ./content/atcompenso.py:106
-#: ./content/atprovvedimento.py:73
+#: ./content/atprovvedimento.py:75
 msgid "effectiveDate_help"
 msgstr ""
 
@@ -195,7 +199,7 @@ msgid "norm_label"
 msgstr ""
 
 #. Default: "Note"
-#: ./browser/provvedimentoview.pt:74
+#: ./browser/provvedimentoview.pt:68
 #: ./browser/vistacompensoview.pt:88
 #: ./content/atcompenso.py:96
 msgid "note_label"
@@ -224,7 +228,7 @@ msgid "office_list_description"
 msgstr ""
 
 #: ./content/atcompenso.py:161
-#: ./content/atprovvedimento.py:105
+#: ./content/atprovvedimento.py:107
 msgid "other"
 msgstr ""
 
@@ -391,7 +395,7 @@ msgid "title_label"
 msgstr ""
 
 #. Default: "Provision id"
-#: ./content/atprovvedimento.py:71
+#: ./content/atprovvedimento.py:73
 msgid "title_provision_label"
 msgstr ""
 
