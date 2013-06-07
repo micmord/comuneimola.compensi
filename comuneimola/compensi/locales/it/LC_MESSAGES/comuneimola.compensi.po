@@ -86,7 +86,7 @@ msgstr "Abstract"
 #. Default: "An abstract of the provision"
 #: ./content/atprovvedimento.py:45
 msgid "abstract_help"
-msgstr "Un riassunto del contenuto del Provvedimento"
+msgstr "Sintesi del dispositivo del provvedimento in alternativa all'inserimento come allegato del provvedimento stesso."
 
 #. Default: "Abstract"
 #: ./browser/provvedimentoview.pt:61
